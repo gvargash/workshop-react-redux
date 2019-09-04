@@ -1,9 +1,5 @@
 import React from "react";
-
-const Teachers = () => (
-  <div>
-    <h1>Teachers</h1>
-  </div>
-);
+import Banner from "../organisms/Banner";
+const Teachers = () => <Banner title='Los mejores profesores de la Industria' image={{ src: "https://gw.alipayobjects.com/zos/rmsportal/lcamFWetlMgLkLmDUgmZ.png", alt: "Banner Profesores" }} />;
 
 export default Teachers;

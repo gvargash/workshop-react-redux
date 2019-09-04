@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Icon, Input, Button, Checkbox, Col, Row } from "antd";
+import { Form, Icon, Input, Button, Checkbox, Col, Row, message } from "antd";
 import { Link, Redirect } from "react-router-dom";
 import Axios from "axios";
 
@@ -19,7 +19,7 @@ const Login = props => {
           }
         }
       } catch (error) {
-        console.log("error:", error.message);
+        message.error("Error al inciar sesion");
       }
     });
   };
