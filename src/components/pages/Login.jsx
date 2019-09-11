@@ -36,13 +36,25 @@ const Login = props => {
             <Form.Item>
               {getFieldDecorator("email", {
                 rules: [{ required: true, message: "Por favor Ingresa tu correo!" }]
-              })(<Input prefix={<Icon type='mail' style={{ color: "rgba(0,0,0,.25)" }} />} type='email' placeholder='correo@gmail.com' />)}
+              })(
+                <Input
+                  prefix={<Icon type='mail' style={{ color: "rgba(0,0,0,.25)" }} />}
+                  type='email'
+                  placeholder='correo@gmail.com'
+                />
+              )}
             </Form.Item>
 
             <Form.Item>
               {getFieldDecorator("password", {
                 rules: [{ required: true, message: "Por favor Ingresa tu Password!" }]
-              })(<Input prefix={<Icon type='lock' style={{ color: "rgba(0,0,0,.25)" }} />} type='password' placeholder='Password' />)}
+              })(
+                <Input
+                  prefix={<Icon type='lock' style={{ color: "rgba(0,0,0,.25)" }} />}
+                  type='password'
+                  placeholder='Password'
+                />
+              )}
             </Form.Item>
 
             <Form.Item>

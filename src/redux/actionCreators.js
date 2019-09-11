@@ -79,7 +79,7 @@ export const getSpecialitie = id => dispacth => {
 };
 
 export const getCourse = id => dispacth => {
-  Axios.get(`${API_URL}/courses/${id}`)
+  Axios.get(`${API_URL}/curso/${id}`)
     .then(respnose => {
       return dispacth({
         type: GET_COURSE,

@@ -41,7 +41,6 @@ export const specialityReducer = (state = {}, action) => {
 
 export const courseReducer = (state = {}, action) => {
   const { type, course, courses } = action;
-
   switch (type) {
     case GET_ALL_COURSES:
       return { ...state, courses };
