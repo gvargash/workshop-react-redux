@@ -28,7 +28,7 @@ const App = () => {
               <Protected path='/especialidades' exact component={Specialities} />
               <Protected path='/especialidades/:id' component={Speciality} />
               <Protected path='/cursos' exact component={Courses} />
-              <Protected path='/cursos/:id' component={Course} />
+              <Protected path='/curso/:id' component={Course} />
               <Protected path='/profesores' exact component={Teachers} />
               <Protected path='/clase/:id' component={Fragment} />
 

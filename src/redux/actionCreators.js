@@ -67,8 +67,8 @@ export const getPost = id => dispacth => {
     .catch(error => message.error(error.message));
 };
 
-export const getSpecialitie = id => dispacth => {
-  Axios.get(`${API_URL}/specialities/${id}`)
+export const getSpeciality = id => dispacth => {
+  Axios.get(`${API_URL}/especialidad/${id}`)
     .then(respnose => {
       return dispacth({
         type: GET_SPECIALITY,

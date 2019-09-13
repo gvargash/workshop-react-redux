@@ -25,7 +25,7 @@ const Courses = ({ courses }) => {
           <Row gutter={16}>
             {courses.map(course => (
               <Col span={6} key={course.id}>
-                <Link to={`cursos/${course.id}`}>
+                <Link to={`curso/${course.id}`}>
                   <Card hoverable cover={<img alt={course.name} src={course.picture} />}>
                     <Meta title={course.name} description={course.subtitle} />
                   </Card>
