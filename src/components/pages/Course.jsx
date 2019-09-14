@@ -4,6 +4,7 @@ import store from "./../../redux/store";
 import { getCourse } from "./../../redux/actionCreators";
 import Banner from "../organisms/Banner";
 import { Divider } from "antd";
+import { Link } from "react-router-dom";
 
 const Course = ({ course }) => {
   useEffect(() => {
@@ -53,7 +54,9 @@ const Course = ({ course }) => {
                 <p>{cl.class.description}</p>
                 <ul>
                   {cl.subjects.map((s, i) => (
-                    <li key={i}>{s.subject.title}</li>
+                    <li key={i}>
+                      <Link to={`/clase/${s.subject.id}`}>{s.subject.title}</Link>
+                    </li>
                   ))}
                 </ul>
               </div>
